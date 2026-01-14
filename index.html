@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Variáveis de Cores e Fontes baseadas na paleta e estilo solicitados */
+        /* Variáveis de Cores e Fontes */
         :root {
             --primary-dark: #0b1838;
             --primary-purple: #4d4177;
@@ -15,7 +15,7 @@
             --secondary-blue: #88a5e0;
             --light-blue: #c8ddf5;
             --white: #ffffff;
-            --bg-light: #f9faff; /* Fundo predominantemente branco */
+            --bg-light: #f9faff;
             --text-color: #0b1838;
             --text-light: #636e72;
             --gradient-primary: linear-gradient(135deg, var(--primary-blue), var(--primary-purple));
@@ -136,7 +136,7 @@
         }
 
         .nav-item {
-            margin-left: 30px;
+            margin-left: 25px;
         }
 
         .nav-link {
@@ -212,6 +212,7 @@
         }
         
         .hero-title span {
+            display: block;
             background: var(--gradient-primary);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -285,7 +286,7 @@
             color: var(--text-light);
         }
 
-        /* Seção de Robótica com Arduino */
+        /* Seção de Robótica & Sobre Mim (Mesma Base) */
         .robotics {
             position: relative;
         }
@@ -608,7 +609,7 @@
             }
 
             .robotics-content {
-                flex-direction: column;
+                flex-direction: column !important;
             }
             
             .robotics-image {
@@ -637,6 +638,7 @@
 
             .nav-item {
                 margin: 20px 0;
+                margin-left: 0;
             }
 
             .hamburger {
@@ -680,11 +682,11 @@
                 </a>
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
-                    <li class="nav-item"><a href="#beneficios" class="nav-link">Sobre</a></li>
-                    <li class="nav-item"><a href="#robotica" class="nav-link">Funcionamento das Aulas</a></li>
+                    <li class="nav-item"><a href="#sobre-mim" class="nav-link">Sobre Mim</a></li>
+                    <li class="nav-item"><a href="#robotica" class="nav-link">Como Funciona</a></li>
                     <li class="nav-item"><a href="#projetos" class="nav-link">Disciplinas</a></li>
                     <li class="nav-item"><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
-                    <li class="nav-item"><a href="#contato" class="btn btn-primary" style="margin-left: 20px;">Matricule-se</a></li>
+                    <li class="nav-item"><a href="#contato" class="btn btn-primary" style="margin-left: 10px;">Matricule-se</a></li>
                 </ul>
                 <div class="hamburger">
                     <span class="bar"></span>
@@ -700,10 +702,8 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 class="hero-title">Desperte mentes curiosas com<span>aprendizado bem construído.</span></h1>
-                    <p class="hero-description">O Arte de Aprender é um projeto educacional voltado ao ensino de matemática, robótica educacional, física e ciências com foco na compreensão real dos conteúdos. Aqui, aprender não significa decorar fórmulas, mas entender conceitos, desenvolver raciocínio lógico e ganhar autonomia intelectual.
-
-O trabalho é conduzido com método, planejamento e acompanhamento contínuo, respeitando o ritmo do aluno sem abrir mão da exigência necessária para o aprendizado consistente.</p>
+                    <h1 class="hero-title">Desperte mentes curiosas com <span>aprendizado bem construído.</span></h1>
+                    <p class="hero-description">O Arte de Aprender é um projeto educacional voltado ao ensino de matemática, robótica educacional, física e ciências com foco na compreensão real dos conteúdos. Aqui, aprender não significa decorar fórmulas, mas entender conceitos.</p>
                     <a href="#robotica" class="btn btn-primary">Conheça o Projeto</a>
                 </div>
                 <div class="hero-image">
@@ -717,7 +717,7 @@ O trabalho é conduzido com método, planejamento e acompanhamento contínuo, re
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Por Que o Projeto Arte de Aprender Funciona?</h2>
-                <p class="section-subtitle">O ensino eficaz sempre seguiu princípios claros: boa explicação, prática orientada e revisão constante. É exatamente isso que aplicamos.</p>
+                <p class="section-subtitle">O ensino eficaz sempre seguiu princípios claros: boa explicação, prática orientada e revisão constante.</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
@@ -756,34 +756,58 @@ O trabalho é conduzido com método, planejamento e acompanhamento contínuo, re
                     <p class="section-subtitle" style="margin: 0;">Nosso curso é uma jornada completa pelo mundo da eletrônica e programação. Utilizando a plataforma Arduino, você aprenderá a interagir com o mundo físico através de sensores e atuadores.</p>
                     <div class="robotics-list">
                         <div class="robotics-item">
-                            <div class="robotics-item-icon">
-                                <i class="fas fa-microchip"></i>
-                            </div>
+                            <div class="robotics-item-icon"><i class="fas fa-microchip"></i></div>
                             <div>
                                 <h4 class="robotics-item-title">Fundamentos de Eletrônica</h4>
-                                <p class="robotics-item-text">Entenda componentes como resistores, LEDs, sensores e como criar circuitos seguros e funcionais.</p>
+                                <p class="robotics-item-text">Entenda componentes como resistores, LEDs e sensores para criar circuitos seguros.</p>
                             </div>
                         </div>
                         <div class="robotics-item">
-                            <div class="robotics-item-icon">
-                                <i class="fas fa-laptop-code"></i>
-                            </div>
+                            <div class="robotics-item-icon"><i class="fas fa-laptop-code"></i></div>
                             <div>
                                 <h4 class="robotics-item-title">Programação em C++</h4>
                                 <p class="robotics-item-text">Domine a linguagem padrão do Arduino para controlar o comportamento dos seus projetos.</p>
                             </div>
                         </div>
+                    </div>
+                    <a href="#contato" class="btn btn-primary" style="margin-top: 30px;">Garantir Minha Vaga</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-mim" class="section-padding robotics" style="background-color: var(--bg-light);">
+        <div class="container">
+            <div class="robotics-content" style="flex-direction: row-reverse;">
+                <div class="robotics-image">
+                    <img src="https://via.placeholder.com/500x600" alt="Idealizador do Projeto">
+                </div>
+                <div class="robotics-details">
+                    <h2 class="section-title">Quem está por trás do Projeto</h2>
+                    <p class="section-subtitle" style="margin: 0;">Olá! Eu sou o idealizador do <strong>Arte de Aprender</strong>. Minha missão é transformar a maneira como jovens e adultos enxergam a tecnologia e as ciências exatas através de um ensino humano e prático.</p>
+                    <div class="robotics-list">
                         <div class="robotics-item">
-                            <div class="robotics-item-icon">
-                                <i class="fas fa-project-diagram"></i>
-                            </div>
+                            <div class="robotics-item-icon"><i class="fas fa-graduation-cap"></i></div>
                             <div>
-                                <h4 class="robotics-item-title">Projetos Maker</h4>
-                                <p class="robotics-item-text">Crie desde sistemas de automação residencial simples até robôs móveis autônomos.</p>
+                                <h4 class="robotics-item-title">Formação e Experiência</h4>
+                                <p class="robotics-item-text">Estudante de tecnologia no IFBA, unindo a base técnica acadêmica com a prática maker de projetos reais.</p>
+                            </div>
+                        </div>
+                        <div class="robotics-item">
+                            <div class="robotics-item-icon"><i class="fas fa-home"></i></div>
+                            <div>
+                                <h4 class="robotics-item-title">Ensino Domiciliar</h4>
+                                <p class="robotics-item-text">Especialista em atendimento personalizado, focando no ritmo individual de cada aluno em seu próprio ambiente.</p>
                             </div>
                         </div>
                     </div>
-                    <a href="#contato" class="btn btn-primary" style="margin-top: 30px;">Garantir Minha Vaga</a>
+                    <div style="margin-top: 30px; display: flex; gap: 15px; align-items: center;">
+                        <a href="https://wa.me/5573982071407" class="btn btn-primary">Fale Comigo</a>
+                        <div class="social-links">
+                            <a href="#" class="social-link" style="background: var(--light-blue); color: var(--primary-blue);"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link" style="background: var(--light-blue); color: var(--primary-blue);"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -799,7 +823,7 @@ O trabalho é conduzido com método, planejamento e acompanhamento contínuo, re
                 <div class="project-card">
                     <img src="https://i.imgur.com/5z2Jg8m.jpg" alt="Braço Robótico">
                     <div class="project-overlay">
-                        <h3 class="project-title">Braço Robótico Controlado</h3>
+                        <h3 class="project-title">Braço Robótico</h3>
                         <p class="project-category">Robótica Avançada</p>
                     </div>
                 </div>
@@ -848,11 +872,11 @@ O trabalho é conduzido com método, planejamento e acompanhamento contínuo, re
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">O Que Dizem Nossos Alunos</h2>
-                <p class="section-subtitle">Histórias reais de quem transformou seu futuro com a Studio Play.</p>
+                <p class="section-subtitle">Histórias reais de quem transformou seu futuro.</p>
             </div>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
-                    <p class="testimonial-quote">"O curso de Arduino abriu minha mente para o mundo da tecnologia. Nunca imaginei que poderia construir meu próprio robô em tão pouco tempo. Os professores são excelentes!"</p>
+                    <p class="testimonial-quote">"O curso de Arduino abriu minha mente para o mundo da tecnologia. Nunca imaginei que poderia construir meu próprio robô."</p>
                     <div class="testimonial-author">
                         <img src="https://i.pravatar.cc/60?img=1" alt="Foto do Aluno" class="author-img">
                         <div class="author-info">
@@ -862,22 +886,12 @@ O trabalho é conduzido com método, planejamento e acompanhamento contínuo, re
                     </div>
                 </div>
                 <div class="testimonial-card">
-                    <p class="testimonial-quote">"Matriculei meu filho e fiquei impressionada com o desenvolvimento dele. Ele aprendeu a ter mais foco e a resolver problemas de forma criativa. Recomendo muito!"</p>
+                    <p class="testimonial-quote">"Matriculei meu filho e fiquei impressionada com o desenvolvimento dele. Ele aprendeu a ter mais foco e criatividade."</p>
                     <div class="testimonial-author">
                         <img src="https://i.pravatar.cc/60?img=5" alt="Foto da Mãe" class="author-img">
                         <div class="author-info">
                             <h4>Mariana Costa</h4>
                             <p>Mãe de Aluno</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <p class="testimonial-quote">"As aulas são muito dinâmicas e práticas. Aprendi não só a programar, mas a trabalhar em equipe e a tirar minhas ideias do papel. É uma experiência incrível."</p>
-                    <div class="testimonial-author">
-                        <img src="https://i.pravatar.cc/60?img=8" alt="Foto do Aluno" class="author-img">
-                        <div class="author-info">
-                            <h4>Lucas Oliveira</h4>
-                            <p>Aluno Avançado</p>
                         </div>
                     </div>
                 </div>
@@ -891,9 +905,9 @@ O trabalho é conduzido com método, planejamento e acompanhamento contínuo, re
                 <div class="footer-about">
                     <a href="#" class="footer-logo">
                         <i class="fas fa-robot"></i>
-                        Projeto Arte de Aprender
+                        Arte de Aprender
                     </a>
-                    <p class="footer-desc">Sua escola de tecnologia e inovação. Preparando a próxima geração de criadores e pensadores através da robótica educacional.</p>
+                    <p class="footer-desc">Sua escola de tecnologia e inovação. Preparando a próxima geração de criadores e pensadores.</p>
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
@@ -905,27 +919,16 @@ O trabalho é conduzido com método, planejamento e acompanhamento contínuo, re
                     <h4 class="footer-heading">Links Rápidos</h4>
                     <ul class="footer-links">
                         <li><a href="#home">Início</a></li>
-                        <li><a href="#beneficios">Sobre Nós</a></li>
+                        <li><a href="#sobre-mim">Sobre Mim</a></li>
                         <li><a href="#robotica">Cursos</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
                         <li><a href="#contato">Contato</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links-col">
-                    <h4 class="footer-heading">Matérias Abordadas</h4>
-                    <ul class="footer-links">
-                        <li><a href="#"></a></li>
-                        <li><a href="#">Arduino - Robótica Educacional</a></li>
-                        <li><a href="#">Matemática</a></li>
-                        <li><a href="#">Física</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
                     <h4 class="footer-heading">Contato</h4>
                     <ul class="footer-links">
-                        <li><a href="#"><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>Atendimento á domicílio</a></li>
-                        <li><a href="tel:+557398207-1407"><i class="fas fa-phone" style="margin-right: 10px;"></i> (73) 98207-1407</a></li>
-                        <li><a href="mailto:202313600051@ifba.edu.br"><i class="fas fa-envelope" style="margin-right: 10px;"></i>202313600051@ifba.edu.br</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>Atendimento à domicílio</a></li>
+                        <li><a href="tel:+5573982071407"><i class="fas fa-phone" style="margin-right: 10px;"></i> (73) 98207-1407</a></li>
                     </ul>
                 </div>
             </div>
